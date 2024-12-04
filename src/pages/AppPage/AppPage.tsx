@@ -9,7 +9,7 @@ import { useAuthStore } from '../../store/authStore';
 import TopBar from '../../components/Topbar/Topbar';
 
 const AppPage: React.FC = () => {
-  const { username } = useAuthStore();
+  const { username, logout } = useAuthStore();
   const navigate = useNavigate();
 
 
@@ -21,7 +21,7 @@ const AppPage: React.FC = () => {
     <div className={styles.appContainer}>
       <TopBar />
       <div className={styles.content}>
-        <WelcomeBox username={username} />
+        <WelcomeBox username={username} onLogout={logout}/>
         
         <CardSection
           title="Dashboard Apps"
