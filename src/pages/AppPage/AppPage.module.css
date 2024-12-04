@@ -1,0 +1,17 @@
+/* src/pages/AppPage/AppPage.module.css */
+.appContainer {
+    min-height: 100vh;
+    background-color: #f5f7fb;
+  }
+  
+  .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      padding: 16px;
+    }
+  }

@@ -1,0 +1,95 @@
+/* src/components/AppCard/AppCard.module.css */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid #e5e7eb;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card:not(.cardDisabled):not(.cardUnavailable):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-color: #d1d5db;
+  }
+  
+  .cardDisabled,
+  .cardUnavailable {
+    cursor: not-allowed;
+    background: white;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .cardDisabled {
+    opacity: 0.95;
+  }
+  
+  .cardUnavailable {
+    opacity: 0.95;
+  }
+  
+  .cardIcon {
+    font-size: 24px;
+    margin-bottom: 16px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3f4f6;
+    border-radius: 8px;
+  }
+  
+  .cardTitle {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+  }
+  
+  .cardDescription {
+    margin: 0;
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.5;
+  }
+  
+  .availableBadge,
+  .disabledBadge,
+  .unavailableBadge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-weight: 500;
+  }
+  
+  .availableBadge {
+    background-color: #ecfdf5;
+    color: #059669;
+  }
+  
+  .disabledBadge {
+    background-color: #eef2ff;
+    color: #4f46e5;
+  }
+  
+  .unavailableBadge {
+    background-color: #fff1f2;
+    color: #e11d48;
+  }
+  
+  @media (max-width: 640px) {
+    .card {
+      padding: 16px;
+    }
+    
+    .cardIcon {
+      margin-bottom: 12px;
+    }
+  }
