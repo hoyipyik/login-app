@@ -45,6 +45,7 @@ const LoginPage: React.FC = () => {
 };
 
 const mockLoginAPI = async (data: { email: string; password: string }) => {
+  console.log(data)
   return new Promise<{ token: string }>((resolve) => {
     setTimeout(() => {
       resolve({ token: 'mock-jwt-token' });

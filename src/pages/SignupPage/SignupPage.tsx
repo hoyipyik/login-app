@@ -41,6 +41,7 @@ const SignupPage: React.FC = () => {
 };
 
 const mockSignupAPI = async (data: { email: string; password: string; confirmPassword?: string }) => {
+  console.log(data)
   return new Promise<void>((resolve) => {
     setTimeout(() => {
       resolve();
