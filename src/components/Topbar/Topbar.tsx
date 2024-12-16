@@ -10,6 +10,7 @@ const TopBar: React.FC = () => {
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
+        <a href='#account'>Account</a>
       </nav>
     </div>
   );
