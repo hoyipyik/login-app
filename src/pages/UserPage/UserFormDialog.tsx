@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './UserFormDialog.module.css';
-import { User } from '../../types/account.types';
-import { App } from './UserManagement';
+import { App, User } from '../../types/account.types';
 
 interface UserFormDialogProps {
   open: boolean;

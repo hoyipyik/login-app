@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .leftSection {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .title {
+    margin: 0;
+  }
+  
+  .backButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+  }
+  
+  .backButton:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  
+  .backIcon {
+    color: #666;
+  }
+  
+  .addButton {
+    padding: 8px 16px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .addButton:hover {
+    background-color: #1565c0;
+  }

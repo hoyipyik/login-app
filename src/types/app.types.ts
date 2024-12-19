@@ -8,3 +8,5 @@ export interface AppCard {
     enabled: boolean;
     unavailable?: boolean;
   }
+
+  

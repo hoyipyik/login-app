@@ -7,10 +7,10 @@ const TopBar: React.FC = () => {
     <div className={styles.topbar}>
       <div className={styles.logo}>CompanyName</div>
       <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href='#account'>Account</a>
+        <a href="/">Home</a>
+        {/*<a href="#about">About</a>
+        <a href="#contact">Contact</a> */}
+        <a href='/account'>Account</a>
       </nav>
     </div>
   );

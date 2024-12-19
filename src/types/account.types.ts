@@ -5,3 +5,9 @@ export interface User {
   password: string;
   appList: number[]; 
 }
+export interface App {
+  id: number;
+  name: string;
+  icon?: string;
+  color?: string;
+}
